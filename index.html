@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>calculator</title>
+</head>
+
+<body class="text-center mx-auto">
+    <header>
+        <h1 class="text-5xl">This is my Calculator</h1>
+    </header>
+    <br>
+    <div class="calculator">
+        <form action="" name="form" class="bg-amber-200	w-4/12 mx-auto">
+            <input type="text" value="" class="p-4 rounded border-x-red-900 w-10/12	 mt-4 text-right font-bold text-4xl"
+                name="display" placeholder="0">
+            <br>
+            <br>
+            <div class="button-area">
+                <div class="button-line">
+                    <input id="button1" type="button" value="1"
+                        class="py-4 mx-3 px-8 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+                        onclick="calculate(this.value)">
+                    <input type="button" value="2"
+                        class="py-4 mx-3 px-8 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+                        onclick="calculate(this.value)">
+                    <input type="button" value="3"
+                        class="py-4 mx-3 px-8 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+                        onclick="calculate(this.value)">
+                    <input type="button" value="Ac"
+                        class="py-4 mx-3 px-8 bg-red-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+                        onclick="display.value = null">
+                </div>
+                <br>
+                <div class="button-line">
+                    <input type="button" value="4"
+                        class="py-4 mx-3 px-8 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+                        onclick="calculate(this.value)">
+                    <input type="button" value="5"
+                        class="py-4 mx-3 px-8 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+                        onclick="calculate(this.value)">
+                    <input type="button" value="6"
+                        class="py-4 mx-3 px-8 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+                        onclick="calculate(this.value)">
+                    <input type="button" value="+"
+                        class="py-4 mx-3 px-8 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+                        onclick="calculate(this.value)">
+                </div>
+                <br>
+                <div class="button-line">
+                    <input type="button" value="7"
+                        class="py-4 mx-3 px-8 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+                        onclick="calculate(this.value)">
+                    <input type="button" value="8"
+                        class="py-4 mx-3 px-8 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+                        onclick="calculate(this.value)">
+                    <input type="button" value="9"
+                        class="py-4 mx-3 px-8 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+                        onclick="calculate(this.value)">
+                    <input type="button" value="-"
+                        class="py-4 mx-3 px-8 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+                        onclick="calculate(this.value)">
+                </div>
+                <br>
+                <div class="button-line">
+                    <input type="button" value="0"
+                        class="py-4 mx-3 px-8 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+                        onclick="calculate(this.value)">
+                    <input type="button" value="="
+                        class="py-4 mx-3 px-8 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+                        onclick="display.value = eval(display.value)">
+                    <input type="button" value="/"
+                        class="py-4 mx-3 px-8 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+                        onclick="calculate(this.value)">
+                    <input type="button" value="*"
+                        class="py-4 mx-3 px-8 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+                        onclick="calculate(this.value)">
+                </div>
+                <br>
+
+            </div>
+        </form>
+
+    </div>
+
+
+    <script src="js/calculator.js"></script>
+
+</body>
+
+</html>
